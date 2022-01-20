@@ -13,7 +13,6 @@ function backtoMenu(){
   document.getElementById("cipherpage").style.display="none";
 }
   btnReturn.addEventListener("click",backtoMenu);
-  
 //AQUI SE CONFIGURA LA PAGINA DE CIFRADO
   //donde se esta diciendo que encode llama a mensaje y desplazamiento 
   function encode(mensaje,desplazamiento) {
