@@ -1,0 +1,84 @@
+*{
+    background-color: #FEF9EF;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 16px;
+}
+header{
+    background-color: #DA7222;
+}
+#logo {
+    display: block;
+    height: 80px;
+}
+h1 {
+    color: #FFFFFF;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #DA7222;
+    font-size: 40px;
+}
+h2{
+    color: #331E38;
+    font-size: 30px;
+}
+h3{
+    color: #331E38;
+    font-size: 20px;
+}
+#root {
+    justify-content: center;
+    align-items: center;
+}
+body{
+    justify-content: center;
+}
+
+div {
+    background:transparent;
+    color: #331E38;   
+}
+fieldset { 
+    border-color: transparent;
+}
+button {
+    border-color: #DA7222;
+    color: white;
+    background-color: #DA7222;
+    border-radius: 5px;
+    font-weight:600;
+}
+strong {
+    color: #DA7222;
+}
+#cipherText {
+    background-color: #DA7222;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 2px;
+    margin: 50px;
+    width: 75%;
+    height: 120px;
+}
+input{
+    border-radius: 5px;
+}
+#textToCipher { 
+    width: 75%;
+    height: 120px;
+    text-align: center;
+    font-size: 18px;
+}
+ol {
+    align-content: center;
+    text-align: center;
+    list-style-position: inside;
+}
+#displacement { 
+    height: 40px;
+    width: 40px;
+}
+#brand h1, h2 {
+    color:#331E38;
+}
