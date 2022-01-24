@@ -46,7 +46,7 @@ button {
     border-color: #DA7222;
     color: white;
     background-color: #DA7222;
-    border-radius: 5px;
+    border-radius: 20px;
     font-weight:600;
 }
 strong {
@@ -60,6 +60,7 @@ strong {
     margin: 50px;
     width: 75%;
     height: 120px;
+    border-radius: 20px;
 }
 input{
     border-radius: 5px;
@@ -69,6 +70,7 @@ input{
     height: 120px;
     text-align: center;
     font-size: 18px;
+    border-radius: 20px;
 }
 ol {
     align-content: center;
