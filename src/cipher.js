@@ -1,6 +1,6 @@
 const cipher = {
   encode: function (offset,mensaje) {
-    if(typeof(mensaje) === "string" && typeof(offset) === "number"){
+    if(typeof(offset) === "number" && typeof(mensaje) === "string" && mensaje !== ""){
       let encoded = "";
       for (let i = 0; i < mensaje.length; i++) {
       let letraAscii = mensaje.charCodeAt(i);
@@ -8,17 +8,16 @@ const cipher = {
         encoded += String.fromCharCode(((letraAscii - 65 + offset) % 26) + 65);
       }else if (letraAscii >=97 && letraAscii <=122){
         encoded += String.fromCharCode((letraAscii - 97 + offset) % 26 + 97);
-      }
-      else{
+      }else{
         encoded += String.fromCharCode(letraAscii);
       }
-      } return encoded;
-    } else {
-      throw new TypeError ("Tipo de dato invalido o inexistente")
+    } return encoded;
+    }else{
+      throw new TypeError("Tipo de dato invalido o inexistente");
     }
   },
   decode: function (offset,mensaje) {
-    if(typeof(mensaje) === "string" && typeof(offset) === "number"){
+    if(typeof(mensaje) === "string" && typeof(offset) === "number" && mensaje !== ""){
       var decoded= "";
       for (let i = 0; i < mensaje.length; i++) {
       let letraAscii = mensaje.charCodeAt(i);
@@ -30,7 +29,7 @@ const cipher = {
       else{
         decoded += String.fromCharCode(letraAscii);
       }
-    } //console.log(decoded,"resultado")
+    }
     return decoded;
     }else{
       throw new TypeError ("tipo de dato invalido o inexistente")

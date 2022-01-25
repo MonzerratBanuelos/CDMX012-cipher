@@ -22,24 +22,25 @@ function backtoMenu(){
 
 
 //AQUI SE CONFIGURA EL BOTON DE DESCIFRAR
-  let btndecode = document.getElementById("btn2");
-  function showDecode() {
-    let mensaje = document.getElementById("textToCipher").value
-    let offset = document.getElementById("offset").value
-    offset = parseInt(offset);
-    let mensajeCifrado = document.getElementById("cipherText");
-    mensajeCifrado.innerHTML=cipher.decode(offset,mensaje);
-  }
+let btndecode = document.getElementById("btn2");
+function showDecode() {
+  let mensaje = document.getElementById("textToCipher").value
+  let offset = document.getElementById("offset").value
+  offset = parseInt(offset);
+  let mensajeCifrado = document.getElementById("cipherText");
+  mensajeCifrado.innerHTML=cipher.decode(offset,mensaje);
+}
   btndecode.addEventListener("click",showDecode);
 
-//AQUÍ SE CONFIGURA BOTÓN QUE MUESTRA TEXTO EN PANTALLA 
-  let btncifrar = document.getElementById("btn1");
-  function showText(){
-    let mensaje = document.getElementById("textToCipher").value
-    let offset = document.getElementById("offset").value
-    offset = parseInt(offset);
-    let mensajeCifrado = document.getElementById("cipherText");
-    mensajeCifrado.innerHTML=cipher.encode(offset,mensaje);
-    }
-btncifrar.addEventListener("click",showText);
-//btncifrar.addEventListener("click",encoded);
+//AQUÍ SE CONFIGURA BOTÓN QUE MUESTRA CIFRADO
+let btncifrar = document.getElementById("btn1");
+function showEncode(){
+  let mensaje = document.getElementById("textToCipher").value
+  let offset = document.getElementById("offset").value
+  offset = parseInt(offset);
+  //console.log(typeof(offset));
+  let mensajeCifrado = document.getElementById("cipherText");
+  mensajeCifrado.innerHTML=cipher.encode(offset,mensaje);
+}
+btncifrar.addEventListener("click",showEncode);
+
