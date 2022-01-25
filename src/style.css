@@ -84,3 +84,14 @@ ol {
 #brand h1, h2 {
     color:#331E38;
 }
+textarea { 
+    width: 75%;
+    height: 120px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+#decodedText{
+    background-color: #DA7222;
+    color: white;
+}

@@ -7,8 +7,6 @@
   </head>
   <body>
     <div id="root">
-      <input type="button" id="clickSaludo" value="Haz click">
-      <h2 id="titulo"></h2>
       <header>
         <div id="brand"><img id="logo" src="logoCifrator.png">
         <h1>Cifrator.com</h1>
@@ -29,26 +27,26 @@
       <br>
     </div>
     <div id="cipherpage" style="display: none;">
-      <fieldset><h2>Instrucciones a seguir para cifrar tu mensaje:</h2>
+      <fieldset><h2>Instrucciones a seguir para Cifrar/Descifrar tu mensaje:</h2>
       <ol type="I">
-        <li>Inserta tu mensaje/contraseña en la caja de texto</li>
+        <li>Inserta tu mensaje/contraseña a cifrar/descifrar en la caja de texto</li>
         <li>Selecciona el nivel de desplazamiento a utilizar</li>
-        <li>Dale click al botón "¡Cifrar!</li>
+        <li>Dale click al botón de tu selección: <b>¡Cifrar</b> o <b>¡Descifrar!</b></li>
       </ol>
       </fieldset>
       <!--<input id="textToCipher" class="TextoUsuario" type="text" placeholder="Escribe tu texto"></input>-->
       <textarea id="textToCipher" class="TextoUsuario" placeholder="Escibre aquí tu mensaje/contraseña"></textarea>
       <br>
       <br>
-      <input id="displacement" type="number" min="1" max="25" placeholder="e.1">
+      <input id="offset" type="number" value="" placeholder="ej.1">
       <br>
       <br>
-      <button id="btn1">¡ Cifrar !</button>
+      <button id="btn1">¡ Cifrar !</button>    <button id="btn2">¡ Descifrar !</button>
       <fieldset id="cipherZone">
         <legend><h3>Tu mensaje cifrado es el siguiente:</h3></legend>
         <textarea id="cipherText" class="TextoUsuario"></textarea>
+        <button id="btnReturn">Regresar ←</button>
       </fieldset>
-      <button id="btnReturn">Regresar ←</button>
     </div>
     <script src="index.js" type="module"></script>
   </body>
