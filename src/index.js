@@ -12,11 +12,11 @@ function showCipherPage(){
 //AQUI SE CONFIGURA EL BOTON QUE MUESTRA PAGINA DE INICIO 
 let btnReturn = document.getElementById("btnReturn"); 
 function backtoMenu(){
-  let cipherPage = document.getElementById("root").style.display='block';
+  let backMenu = document.getElementById("root").style.display='block';
   document.getElementById("cipherpage").style.display="none";
   document.getElementById("textToCipher").value="";
   document.getElementById("cipherText").value="";
-  return cipherPage
+  return backMenu
 }
   btnReturn.addEventListener("click",backtoMenu);
 
