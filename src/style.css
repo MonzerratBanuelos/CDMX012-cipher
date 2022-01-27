@@ -10,19 +10,25 @@
 }
 header{
     background-color: #DA7222;
+    margin: 0%;
 }
 #logo {
     display: block;
     height: 80px;
+}
+#brand{
+    width:fit-content;
+    height: 80px;
+    float: left;
 }
 h1 {
     color: #FFFFFF;
     font-family:Georgia, 'Times New Roman', Times, serif;
     background-color: #DA7222;
     font-size: 40px;
-}
-h2 header{
-    background-color: #DA7222;
+    height: 80px;
+    text-align: center;
+    margin-right: 80px;
 }
 h2{
     color: #331E38;
@@ -110,4 +116,7 @@ footer, a{
     padding-top: 20px;
     padding-bottom: 20px;
     text-decoration: none;
+}
+img{
+    border-radius: 20px;
 }
